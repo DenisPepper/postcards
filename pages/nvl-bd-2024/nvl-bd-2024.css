@@ -1,0 +1,76 @@
+@import '../../styles.css';
+
+:root {
+  --star-color: #af71bc;
+  --first-color: #c2aa5a;
+  --second-color: #5e4562;
+  --three-color: #fe464e;
+  --four-color: #75b5c9;
+}
+
+.sec {
+  position: relative;
+  background-color: var(--first-color);
+  min-height: 100vh;
+  overflow: hidden;
+  opacity: 0.6;
+}
+
+.main-title {
+  text-align: center;
+  padding: 15px;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(2deg);
+  color: var(--three-color);
+  background-color: rgba(194, 170, 90, 0.6);
+  font-size: 4.5rem;
+  font-weight: 700;
+  line-height: 4rem;
+  z-index: 5;
+  vertical-align: middle;
+}
+
+.main-title > span {
+  color: var(--second-color);
+  font-size: 6rem;
+}
+
+.flowers {
+  width: 95%;
+  height: auto;
+  position: absolute;
+  bottom: 5%;
+  left: 5%;
+  z-index: 10;
+  animation: flowers 20s linear infinite;
+}
+
+@keyframes flowers {
+  0% {
+    transform: translateY(10px) scale(1) rotate(-5deg);
+  }
+  50% {
+    transform: translateY(-10px) scale(1.1) rotate(0deg);
+  }
+  100% {
+    transform: translateY(10px) scale(1) rotate(-5deg);
+  }
+}
+
+.star {
+  position: absolute;
+  color: var(--three-color);
+}
+
+.star::before {
+  content: '\f005';
+  font-family: fontAwesome;
+}
+
+.star.animate {
+  color: var(--star-color);
+  text-shadow: 0 0 5px var(--star-color), 0 0 20px var(--star-color),
+    0 0 50px var(--star-color);
+}
