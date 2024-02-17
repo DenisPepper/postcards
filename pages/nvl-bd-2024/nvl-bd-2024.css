@@ -74,3 +74,23 @@
   text-shadow: 0 0 5px var(--star-color), 0 0 20px var(--star-color),
     0 0 50px var(--star-color);
 }
+
+@media (min-width: 500px) {
+  .flowers {
+    width: 50%;
+  }
+}
+
+@media (min-width: 700px) {
+  .main-title {
+    text-align: center;
+    padding: 15px;
+    position: absolute;
+    top: 20%;
+    left: 60%;
+  }
+
+  .flowers {
+    width: 45%;
+  }
+}
