@@ -60,7 +60,7 @@
   width: 95%;
   height: auto;
   position: absolute;
-  bottom: 5%;
+  bottom: 10%;
   left: 5%;
   z-index: 10;
   animation: flowers 20s linear infinite;
