@@ -32,6 +32,16 @@
   vertical-align: middle;
 }
 
+.main-title::before {
+  content: 'Наташа!';
+  position: absolute;
+  top: -20%;
+  left: 15%;
+  font-size: 2rem;
+  background-color: var(--three-color);
+  color: var(--four-color);
+}
+
 .main-title > span {
   color: var(--second-color);
   font-size: 6rem;
