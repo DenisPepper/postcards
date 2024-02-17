@@ -32,6 +32,15 @@
   vertical-align: middle;
 }
 
+.sound {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 15;
+  opacity: 0.6;
+}
+
 .main-title::before {
   content: 'Наташа!';
   position: absolute;
