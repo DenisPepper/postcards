@@ -10,8 +10,8 @@
 
 .sec {
   position: relative;
-  /* background-color: var(--first-color); */
-  min-height: 100vh;
+  max-width: 100vw;
+  min-height: 100%;
   overflow: hidden;
   opacity: 0.6;
 }
